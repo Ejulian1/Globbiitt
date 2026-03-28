@@ -12,6 +12,28 @@ export default function HomePage() {
   const filteredCounties = useMemo(() => {
     return counties.filter((county) => county.price <= budget);
   }, [budget]);
+  const recommendation = filteredCounties[0];
+  {recommendation && (
+  <div style={{
+    background: "#fff",
+    borderRadius: "20px",
+    padding: "20px",
+    marginBottom: "20px",
+    border: "2px solid #F28B82"
+  }}>
+    <h3>✨ Recommended for You</h3>
+    <p>
+      Based on your budget, we suggest: <strong>{recommendation.name}</strong>
+    </p>
+  </div>
+)}
+<button
+  onClick={() => alert("Invite sent! ✈️💌")}
+  className={styles.inviteButton}
+>
+  
+  Send Invite
+</button>
 
   return (
     <main className={styles.page}>
@@ -20,7 +42,7 @@ export default function HomePage() {
 
         <section className={styles.mainSection}>
           <div>
-            <h1 className={styles.headerTitle}>Aviation Destinations</h1>
+            <h1 className={styles.headerTitle}> Globit </h1>
             <p className={styles.headerText}>
               Showing places within your budget
             </p>

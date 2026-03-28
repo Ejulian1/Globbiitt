@@ -26,7 +26,7 @@ export default function CountryCard({ county }: CountryCardProps) {
 
         <div className={styles.buttonRow}>
           <button className={styles.primaryButton}>View</button>
-          <button className={styles.secondaryButton}>Compare</button>
+          <button className={styles.secondaryButton}>Book</button>
         </div>
       </div>
     </div>

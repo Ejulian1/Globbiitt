@@ -6,6 +6,19 @@
   --background: #FAF7F2;
   --text: #2D3142;
 }
+.primaryButton {
+  background: linear-gradient(135deg, #7EC8A4, #5BAFD6);
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primaryButton:hover {
+  opacity: 0.9;
+}
 
 html,
 body {

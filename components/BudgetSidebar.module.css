@@ -1,15 +1,19 @@
 .sidebar {
-  background: white;
-  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 3px solid #f7bfd2;
+  border-radius: 28px;
   padding: 24px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 20px rgba(45, 49, 66, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
+/* Budget */
 .title {
   font-size: 28px;
-  font-weight: bold;
-  color: var(--primary);
-  margin-bottom: 20px;
+  font-weight: 800;
+  color: #7ec8a4;
 }
 
 .label {
@@ -19,17 +23,55 @@
 
 .price {
   font-size: 32px;
-  font-weight: bold;
-  margin: 8px 0 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
 }
 
 .slider {
   width: 100%;
-  accent-color: var(--primary);
+  accent-color: #7ec8a4;
 }
 
-.text {
-  margin-top: 20px;
-  font-size: 14px;
-  color: #555;
+/* Divider */
+.divider {
+  margin: 20px 0;
+  border-top: 2px dashed #f7bfd2;
+}
+
+/* Invite Friend */
+.friendTitle {
+  font-size: 20px;
+  font-weight: 800;
+  color: #f28b82;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 12px;
+  border: 2px solid #f6d6df;
+  background: #fffaf7;
+}
+
+.textarea {
+  min-height: 80px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 2px solid #f6d6df;
+  background: #fffaf7;
+  resize: none;
+}
+
+.inviteButton {
+  background: linear-gradient(135deg, #7ec8a4, #5bafd6);
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.inviteButton:hover {
+  transform: scale(1.05);
 }
