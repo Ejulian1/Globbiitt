@@ -1,0 +1,17 @@
+:root {
+  --primary: #7EC8A4;
+  --secondary: #5BAFD6;
+  --accent: #F5C842;
+  --pop: #F28B82;
+  --background: #FAF7F2;
+  --text: #2D3142;
+}
+
+html,
+body {
+  background: linear-gradient(
+    180deg,
+    #7EC8A4 0%,
+    #A8E6CF 100%
+  );
+}
